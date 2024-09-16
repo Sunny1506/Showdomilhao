@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Showdomilhao")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+771c818ef6b80834ab493b448d4a5592cffe786a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+54868f390ae040073d8869760cc472b353f49884")]
 [assembly: System.Reflection.AssemblyProductAttribute("Showdomilhao")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Showdomilhao")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
