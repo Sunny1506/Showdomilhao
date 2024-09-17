@@ -1,6 +1,6 @@
 namespace Showdomilhao
 {
-    public class Questão
+    public class Questao
     {
         public string Pergunta;
         public string Resposta1;
@@ -11,36 +11,63 @@ namespace Showdomilhao
         public int Respostacorreta;
         public int Nivelresposta;
         private Label Labelpergunta;
-        private Button Button1;
-        private Button Button2;
-        private Button Button3;
-        private Button Button4;
-        private Button Button5;
+        private Button ButtonResposta1;
+        private Button ButtonResposta2;
+        private Button ButtonResposta3;
+        private Button ButtonResposta4;
+        private Button ButtonResposta5;
 
 
         public void ConfiguraEstruturaDesenho()
         {
             Labelpergunta = labelpergunta;
-            Button1 = buttonresposta1;
-            Button2 = buttonresposta2;
-            Button3 = buttonresposta3;
-            Button4 = buttonresposta4;
-            Button5 = buttonresposta5;
+            ButtonResposta1 = button1;
+            ButtonResposta2 = button2;
+            ButtonResposta3 = button3;
+            ButtonResposta4 = button4;
+            ButtonResposta5 = button5;
         }
         public void Desenhar()
         {
-            Labelpergunta = labelpergunta;
-            Button1 = buttonresposta1;
-            Button2 = buttonresposta2;
-            Button3 = buttonresposta3;
-            Button4 = buttonresposta4;
-            Button5 = buttonresposta5;
+            Labelpergunta.Text = labelpergunta;
+            ButtonResposta1.Text = button1;
+            ButtonResposta2.Text = button2;
+            ButtonResposta3.Text = button3;
+            ButtonResposta4.Text = button4;
+            ButtonResposta5.Text = button5;
         }
-        public void VerificaResposta(int RespostaSelecionada)
-        {
-            if Respostacorreta = RespostaSelecionada;
-            {
 
+        private Button QualButton(int RespostaSelecionada)
+        {
+            if (RespostaSelecionada == 1)
+                return ButtonResposta1;
+            else if (RespostaSelecionada == 2)
+                return ButtonResposta2;
+            else if (RespostaSelecionada == 3)
+                return ButtonResposta3;
+            else if (RespostaSelecionada == 4)
+                return ButtonResposta4;
+            else if (RespostaSelecionada == 5)
+                return ButtonResposta5;
+            else
+                return null;
+
+        }
+        public bool VerificaResposta(int RespostaSelecionada)
+        {
+            if (Respostacorreta == RespostaSelecionada)
+            {
+                var Button = QualButton(RespostaSelecionada);
+                Button BackgroundColor = Colors.Green;
+                return true;
+            }
+            else
+            {
+                var ButtonCorreto = QualButton (Respostacorreta);
+                var ButtonIncorreto = QualButton (RespostaSelecionada);
+                ButtonCorreto.BackgroundColor = Colors.Yellow;
+                ButtonIncorreto.BackgroundColor = Colors.Red;
+                return false;
             }
         }
 
@@ -48,14 +75,14 @@ namespace Showdomilhao
         {
 
         }
-        public Questao(Label labelpergunta, Button buttonresposta1, Button buttonresposta2, Button buttonresposta3, Button buttonresposta4, Button buttonresposta5)
+        public Questao(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
         {
             Labelpergunta = labelpergunta;
-            Button1 = buttonresposta1;
-            Button2 = buttonresposta2;
-            Button3 = buttonresposta3;
-            Button4 = buttonresposta4;
-            Button5 = buttonresposta5;
+            ButtonResposta1 = button1;
+            ButtonResposta2 = button2;
+            ButtonResposta3 = button3;
+            ButtonResposta4 = button4;
+            ButtonResposta5 = button5;
         }
 
 
