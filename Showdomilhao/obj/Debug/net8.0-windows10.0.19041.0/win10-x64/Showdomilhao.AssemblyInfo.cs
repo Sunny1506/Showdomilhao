@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Showdomilhao")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ac0a1be776a601bce621e76781b3e34091f4b8d7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+d3666d5bf27da6025337570ac9b134200b49f32b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Showdomilhao")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Showdomilhao")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
